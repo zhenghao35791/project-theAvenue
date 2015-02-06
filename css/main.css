@@ -1,0 +1,182 @@
+body {
+	padding-top: 50px;
+	padding-bottom: 40px;
+	color: #5a5a5a;
+}
+
+.form-group {
+	padding-left:150px;	
+}
+.height-35{
+	height:35px;
+}
+#notice {
+	width: 699px;
+	border: 5px solid #ababab;
+	-moz-border-radius: 15px;      /* Gecko browsers */
+	-webkit-border-radius: 15px;   /* Webkit browsers */
+	border-radius: 15px;
+	box-shadow: 2px 2px 10px #ababab;
+	margin: 50px auto 0;
+	text-align: left;               /* 让新闻内容靠左 */
+}
+/*  头部样式 */	
+#noticeTitle {
+	height: 62px;
+	overflow: hidden;  /* 这个一定要加上，内容超出的部分要隐藏，免得撑高头部 */
+	font-size: 26px;
+	line-height: 62px;
+	padding-left: 30px;
+	background-image: -moz-linear-gradient(top, #f05e6f, #c9394a); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f05e6f), color-stop(1, #c9394a)); /* Saf4+, Chrome */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8fa1ff', endColorstr='#f05e6f', GradientType='0'); /* IE*/
+	border: 1px solid ##f05e6f;
+	-moz-border-radius: 8px 8px 0 0;      /* Gecko browsers */
+	-webkit-border-radius: 8px 8px 0 0;   /* Webkit browsers */
+	border-radius: 8px 8px 0 0;
+	color: #fff;
+	position: relative;
+}
+#noticeTitle a {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: inline;
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+}
+/*  底部样式 */
+#noticeBot {
+	width: 399px;
+	height: 10px;
+	overflow: hidden;     /* 这个一定要加上，内容超出的部分要隐藏，免得撑高底部结构 */
+}
+/*  中间样式 */
+#noticeBox {
+	height: 144px;
+	width: 335px;
+	margin-left: 25px;
+	margin-top: 10px;
+	overflow: hidden;    /*  这个一定要加，超出的内容部分要隐藏，免得撑高中间部分 */
+}
+#notice ul li {
+	height: 24px;
+	list-style-type:none;
+}
+#notice ul li a {
+	width: 220px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	text-indent: 15px;
+	height: 24px;
+}
+#notice ul li span {
+	float: right;
+	color: #999;
+}
+
+
+
+
+
+/* 轮播广告 */
+
+.carousel {
+	height: 500px;
+	margin-bottom: 60px;
+}
+
+.carousel .item {
+	height: 500px;
+	background-color: #000;
+}
+
+.carousel .item img {
+	width: 100%;
+}
+
+.carousel-caption {
+	z-index: 10;
+}
+
+.carousel-caption p {
+	margin-bottom: 20px;
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+/* 简介 */
+
+.summary {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.summary .col-md-4 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/* 特性 */
+
+.feature-divider {
+	margin: 40px 0;
+}
+
+.feature {
+	padding: 30px 0;
+}
+
+.feature-heading {
+	font-size: 50px;
+	color: #2a6496;
+}
+
+.feature-heading .text-muted {
+	font-size: 28px;
+}
+
+/* 响应式布局 */
+
+@media (max-width: 768px) {
+
+	.summary {
+		padding-right: 3px;
+		padding-left: 3px;
+	}
+
+	.carousel {
+		height: 300px;
+		margin-bottom: 30px;
+	}
+
+	.carousel .item {
+		height: 300px;
+	}
+
+	.carousel img {
+		min-height: 300px;
+	}
+
+	.carousel-caption p {
+		font-size: 16px;
+		line-height: 1.4;
+	}
+
+	.feature-heading {
+		font-size: 34px;
+	}
+
+	.feature-heading .text-muted {
+		font-size: 22px;
+	}
+	
+}
+
+@media (min-width: 992px) {
+	.feature-heading {
+		margin-top: 120px;
+	}
+}
